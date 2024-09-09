@@ -1,0 +1,29 @@
+/*header*/
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 0%;
+    background-color: black;
+}
+.navbar .logo h1{
+    color:white ;
+    cursor: pointer;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
