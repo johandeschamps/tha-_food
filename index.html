@@ -25,9 +25,9 @@
         <section class="content">
             <h1>Cuisine Thaïlandaise à domicile</h1>
             <p>Découvrez nos délicieux plats frais en livraison.</p>
-            <button onclick="window.location.href = '#entree';">Découvrir</button>
+            <button onclick="window.location.href = '#entrees';">Découvrir</button>
         </section>
-        <div id="notification" class="notification">Produit ajouté au panier!</div>
+
         <h1 class="produits_texte" id="entrees">Nos entrées</h1>
         <section class="section_produits">
             <div class="produits">
@@ -47,7 +47,8 @@
                     <div class="titre">Salade de concombre thaï</div>
                     <div class="box">
                         <div class="prix">4.90€</div>
-                        <button class="achat">Ajouter au panier</button>
+                        <button class="achat" id="test achat">Ajouter au panier</button>
+                        <!--<p class="message" id="test">Le produit a bien été ajouté au panier !</p>-->
                     </div>
                 </div>
 
@@ -171,5 +172,22 @@
     <p>Copyright © Johan D.</p>
    </footer>
    <script src="script.js"></script>
+   <!--
+   <script>
+
+    var clicAfficher = document.getElementById("test achat"),
+    
+    afficherTexte = document.getElementById("test");
+    
+    clicAfficher.addEventListener ("click", function (){
+    
+    afficherTexte.style.display = "block";
+    
+    clicAfficher.style.display = "none";
+    
+    });
+    
+    </script>
+  -->
 </body>
 </html>
