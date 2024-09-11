@@ -13,11 +13,11 @@
             <div><img src="img/3.png" class="logo"></div>
             <ul class="menu">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#entree">Entrée</a></li>
+                <li><a href="#entrees">Entrée</a></li>
                 <li><a href="#plats">Plat</a></li>
-                <li><a href="#deserts">Désert</a></li>
+                <li><a href="#deserts">Dessert</a></li>
                 <li><a href="#" class="fa-regular fa-user"></a></li>
-                <li><a href="#" class="fa-solid fa-cart-shopping"></a></li>
+                <li><a href="#" id="icone-panier" class="fa-solid fa-cart-shopping"></a></li>
             </ul>
         </nav>
    </header> 
@@ -25,144 +25,151 @@
         <section class="content">
             <h1>Cuisine Thaïlandaise à domicile</h1>
             <p>Découvrez nos délicieux plats frais en livraison.</p>
-            <button>Decouvrir</button>
+            <button onclick="window.location.href = '#entree';">Découvrir</button>
         </section>
-
-        <h1 class="produits_texte" id="entree">Nos entrées</h1>
+        <div id="notification" class="notification">Produit ajouté au panier!</div>
+        <h1 class="produits_texte" id="entrees">Nos entrées</h1>
         <section class="section_produits">
             <div class="produits">
                 <div class="carte">
-                    <div class="img"><img src="img/crevete.jfif" alt="Padthaï" width="310px" height="310px></div>
+                    <div class="img"><img src="img/crevete.jfif" alt="Crevettes au satay"></div>
                     <div class="desc"></div>
-                    <div class="titre">Crevettes au satay</div>
+                    <div class="titre" id="product1">Crevettes au satay</div>
                     <div class="box">
-                        <div class="prix">7,90€</div>
+                        <div class="prix">7.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/concombre.jfif" alt="Padthaï" width="310px" height="310px></div>
+                    <div class="img"><img src="img/concombre.jfif" alt="Salade de concombre thaï"></div>
                     <div class="desc"></div>
                     <div class="titre">Salade de concombre thaï</div>
                     <div class="box">
-                        <div class="prix">4,90€</div>
+                        <div class="prix">4.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/rouleau-de-printemps.jpg" alt="Padthaï" width="310px" height="310px></div>
+                    <div class="img"><img src="img/rouleau-de-printemps.jpg" alt="Rouleau de printemps"></div>
                     <div class="desc"></div>
                     <div class="titre">Rouleau de printemps</div>
                     <div class="box">
-                        <div class="prix">5,90€</div>
+                        <div class="prix">5.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/soupe-thai-au-lait-de-coco-1.jpeg" alt="Padthaï" width="310px" height="310px></div>
+                    <div class="img"><img src="img/soupe-thai-au-lait-de-coco-1.jpeg" alt="Soupe thaï au lait de coco"></div>
                     <div class="desc"></div>
                     <div class="titre">Soupe thaï au lait de coco</div>
                     <div class="box">
-                        <div class="prix">4,90€</div>
+                        <div class="prix">4.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
         </section>
-
+        <hr class="separator">
         <h1 class="produits_texte" id="plats">Nos plats</h1>
         <section class="section_produits">
             <div class="produits">
                 <div class="carte">
-                    <div class="img"><img src="img/Authentic-Pad-Thai_square-1908.jpg" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/Authentic-Pad-Thai_square-1908.jpg" alt="Padthaï"></div>
                     <div class="desc"></div>
                     <div class="titre">Padthaï</div>
                     <div class="box">
-                        <div class="prix">9,90€</div>
+                        <div class="prix">9.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/Curry-massaman-2-833x625.jpg" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/Chicken Massaman Curry cc.jpg" alt="Curry Massaman"></div>
                     <div class="desc"></div>
                     <div class="titre">Curry Massaman</div>
                     <div class="box">
-                        <div class="prix">9,90€</div>
+                        <div class="prix">9.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/thai-red-curry-34c1e6d.webp" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/thai-red-curry-34c1e6d.webp" alt="Curry Rouge"></div>
                     <div class="desc"></div>
                     <div class="titre">Curry Rouge</div>
                     <div class="box">
-                        <div class="prix">9,90€</div>
+                        <div class="prix">9.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/green-curry-new-sq-2.jpg" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/green-curry-new-sq-2.jpg" alt="Curry vert"></div>
                     <div class="desc"></div>
                     <div class="titre">Curry vert</div>
                     <div class="box">
-                        <div class="prix">9,90€</div>
+                        <div class="prix">9.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
         </section>
-
-        <h1 class="produits_texte" id="deserts">Nos déserts</h1>
+        <hr class="separator">
+        <h1 class="produits_texte" id="deserts">Nos desserts</h1>
         <section class="section_produits">
             <div class="produits">
                 <div class="carte">
-                    <div class="img"><img src="img/Thai-Mango-Sticky-Rice3.jpg" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/Thai-Mango-Sticky-Rice3.jpg" alt="Riz, mangue, lait de coco"></div>
                     <div class="desc"></div>
                     <div class="titre">Riz, mangue, lait de coco</div>
                     <div class="box">
-                        <div class="prix">4,90€</div>
+                        <div class="prix">4.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/1599389045_82344.jpg" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/1599389045_82344.jpg" alt="Pancake à la banane"></div>
                     <div class="desc"></div>
                     <div class="titre">Pancake à la banane</div>
                     <div class="box">
-                        <div class="prix">3,90€</div>
+                        <div class="prix">3.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/i1633-banane-au-lait-de-coco-a-ma-facon.webp" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/i1633-banane-au-lait-de-coco-a-ma-facon.webp" alt="Banane au lait de coco"></div>
                     <div class="desc"></div>
                     <div class="titre">Banane au lait de coco</div>
                     <div class="box">
-                        <div class="prix">4,90€</div>
+                        <div class="prix">3.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
 
                 <div class="carte">
-                    <div class="img"><img src="img/thai-ruam-mit-dessert-768x1024.webp" alt="Padthaï" width="310px" height="310px"></div>
+                    <div class="img"><img src="img/thai-ruam-mit-dessert-768x1024.webp" alt="Salade de fruits, lait de coco"></div>
                     <div class="desc"></div>
-                    <div class="titre">Salade de fruit, lait de coco</div>
+                    <div class="titre">Salade de fruits, lait de coco</div>
                     <div class="box">
-                        <div class="prix">3,90€</div>
+                        <div class="prix">3.90€</div>
                         <button class="achat">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <div class="panier-container">
+            <h2>Panier</h2>
+            <ul id="panier"></ul>
+        </div>  
    </main>
+   <footer>
+    <p>Copyright © Johan D.</p>
+   </footer>
+   <script src="script.js"></script>
 </body>
 </html>
