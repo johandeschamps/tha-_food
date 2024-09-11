@@ -1,134 +1,256 @@
 /* --------------- header */
-.logo{
-    width: 200px;
+/* Définition de la taille du logo */
+.logo {
+    width: 210px; /* Largeur du logo définie à 200px */
 }
-.navbar{
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0%;
-    z-index: 0%;
-    background-color: black;
+
+/* Style de la barre de navigation */
+.navbar {
+    padding: 20px 5%; /* Espacement intérieur de 20px en haut/bas et 5% à gauche/droite */
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Alignement centré des éléments verticalement */
+    position: sticky; /* Position collante pour que la barre reste en haut lors du défilement */
+    top: 0%; /* Positionnement en haut de la page */
+    z-index: 0; /* Ordre de superposition défini à 0 */
+    background-color: black; /* Couleur de fond noire */
 }
-.navbar .menu li{
-    list-style: none;
-    display: inline-block
+
+/* Style des éléments de menu dans la barre de navigation */
+.navbar .menu li {
+    list-style: none; /* Suppression des puces de liste */
+    display: inline-block; /* Affichage en ligne des éléments */
 }
-.navbar .menu li a{
-    display: block;
-    margin-left: 20px;
-    color: white;
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
+
+/* Style des liens dans le menu de navigation */
+.navbar .menu li a {
+    display: block; /* Affichage en bloc des liens */
+    margin-left: 20px; /* Marge de 20px à gauche */
+    color: white; /* Couleur de texte blanche */
+    border-bottom: 4px solid transparent; /* Bordure inférieure transparente */
+    text-decoration: none; /* Suppression du soulignement du lien */
+    font-size: 19px; /* Taille de la police des liens */
+    font-weight: bold; /* Texte en gras */
 }
-.navbar .menu li a:hover{
-color: lightsalmon;
+
+/* Effet de survol sur les liens du menu */
+.navbar .menu li a:hover {
+    color: lightsalmon; /* Changement de la couleur du texte lors du survol */
 }
-.navbar .menu li .active{
-    border-bottom: 4px solid red;
+
+/* Style pour l'élément actif du menu */
+.navbar .menu li .active {
+    border-bottom: 4px solid red; /* Bordure rouge pour l'élément actif */
 }
-.navbar .menu li .a:hover{
-    border-bottom: 4px solid red;
+
+/* Effet de survol sur le lien actif */
+.navbar .menu li .a:hover {
+    border-bottom: 4px solid red; /* Bordure rouge lors du survol de l'élément actif */
 }
 
 /* --------------- fin header */ 
 
 /* --------------- main*/ 
 
-.content{
-    background-image: url(img/Chicken\ Massaman\ Curry.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
-    height: 100vh;
+/* Style pour le contenu principal */
+.content {
+    background-image: url(img/Chicken\ Massaman\ Curry.jpg); /* Image de fond */
+    background-size: cover; /* Couverture complète de l'image de fond */
+    background-repeat: no-repeat; /* Pas de répétition de l'image de fond */
+    padding: 0 5%; /* Espacement intérieur de 0 en haut/bas et 5% à gauche/droite */
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Orientation des éléments en colonne */
+    justify-content: center; /* Alignement centré des éléments */
+    align-items: flex-start; /* Alignement des éléments sur le côté gauche */
+    color: white; /* Couleur de texte blanche */
+    height: 100vh; /* Hauteur définie à 100% de la hauteur de la fenêtre */
 }
-.content h1{
-    font-size: 40px;
-}
-.content p{
-    font-size: 20px;
-    margin-top: 20px;
-}
-.content button{
-    margin-top: 30px;
-    padding: 15px 30px;
-    border: none;
-    background: red;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-    /* --------------- fin main */ 
 
-    /* --------------- début produit */ 
+/* Style du titre principal */
+.content h1 {
+    font-size: 40px; /* Taille de la police du titre */
+}
 
-.produits_texte{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    margin-top: 300px;
-    margin-left: 80px;
-    color: black;
+/* Style des paragraphes */
+.content p {
+    font-size: 20px; /* Taille de la police des paragraphes */
+    margin-top: 20px; /* Marge supérieure de 20px */
 }
-.section_produits{
-   padding: 40px 5%; 
+
+/* Style des boutons */
+.content button {
+    margin-top: 30px; /* Marge supérieure de 30px */
+    padding: 15px 30px; /* Espacement intérieur de 15px en haut/bas et 30px à gauche/droite */
+    border: none; /* Suppression des bordures */
+    background: red; /* Couleur de fond rouge */
+    color: white; /* Couleur de texte blanche */
+    border-radius: 5px; /* Bords arrondis de 5px */
+    cursor: pointer; /* Curseur pointeur survol */
 }
+
+/* --------------- fin main */ 
+
+/* --------------- début produit */ 
+
+/* Style du séparateur horizontal */
+.separator {
+    border: 0; /* Suppression de la bordure */
+    height: 1px; /* Hauteur de 1px */
+    background: #ccc; /* Couleur de fond gris clair */
+    margin: 40px 0; /* Marges de 40px en haut et en bas */
+}
+
+/* Style du texte de la section produits */
+.produits_texte {
+    text-align: center; /* Alignement centré du texte */
+    font-size: 30px; /* Taille de la police */
+    font-weight: 300; /* Poids de la police légère */
+    margin-top: 20px; /* Marge supérieure de 20px */
+    margin-left: 80px; /* Marge gauche de 80px */
+    color: black; /* Couleur du texte noire */
+}
+
+/* Espacement pour la section des produits */
+.section_produits {
+    padding: 40px 5%; /* Espacement intérieur de 40px en haut/bas et 5% à gauche/droite */
+}
+
+/* Disposition des produits en grille */
 .produits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: grid; /* Affichage en grille */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Colonnes adaptatives */
 }
-.produits .carte {
-    width: 310px;
-    background: #fff5f5;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
- .produits .carte .desc{
-    padding: 5px 20px;
-    opacity: 0.8;;
- }
- .produits .carte .titre{
-    font-weight: 900;
-    font-size:20px ;
-    color: black;
-    padding: 0 20px;
-    background-color: white;
- }
- .produits .carte .box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
- }
- .produits .carte .prix{
-    color: red;
-    font-size: 20px;
-    font-weight: bold;
 
- }
- .produits .carte .achat{
-    font-size: 13px;
-    font-weight: 900;
-    color: red;
-    padding: 10px 18px;
-    border-radius: 5px;
- }
- .produits .carte .box .achat:hover{
-    cursor: pointer;
-    background: black;
-    color: white;
- }
+/* Style des cartes de produits */
+.produits .carte {
+    width: 310px; /* Largeur de la carte */
+    background: #fff5f5; /* Couleur de fond rose pâle */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre de la carte */
+    border-radius: 10px; /* Bords arrondis de 10px */
+    margin-bottom: 20px; /* Marge inférieure de 20px */
+}
+
+/* Style des images des cartes */
+.produits .carte img {
+    height: 250px; /* Hauteur de l'image */
+    width: 100%; /* Largeur de l'image */
+    border-radius: 10px; /* Bords arrondis de l'image */
+}
+
+/* Style de la description des produits */
+.produits .carte .desc {
+    padding: 5px 20px; /* Espacement intérieur */
+    opacity: 0.8; /* Transparence de 80% */
+}
+
+/* Style du titre des produits */
+.produits .carte .titre {
+    font-weight: 900; /* Poids de la police très gras */
+    font-size: 20px; /* Taille de la police */
+    color: black; /* Couleur du texte noire */
+    padding: 0 20px; /* Espacement intérieur */
+    background-color: white; /* Couleur de fond blanche */
+}
+
+/* Disposition des éléments dans la boîte de produit */
+.produits .carte .box {
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Alignement centré des éléments */
+    padding: 20px; /* Espacement intérieur de 20px */
+}
+
+/* Style du prix des produits */
+.produits .carte .prix {
+    color: red; /* Couleur du texte rouge */
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style du bouton d'achat */
+.produits .carte .achat {
+    font-size: 13px; /* Taille de la police */
+    font-weight: 900; /* Poids de la police très gras */
+    color: red; /* Couleur du texte rouge */
+    padding: 10px 18px; /* Espacement intérieur */
+    border-radius: 5px; /* Bords arrondis de 5px */
+}
+
+/* Effet de survol sur le bouton d'achat */
+.produits .carte .box .achat:hover {
+    cursor: pointer; /* Curseur pointeur survol */
+    background: black; /* Couleur de fond noire */
+    color: white; /* Couleur de texte blanche */
+}
 
 /* --------------- fin produit */ 
 
-/* --------------- début contact, footer */ 
+/* --------------- début panier */ 
+
+/* Style de la liste du panier */
+#panier {
+    list-style-type: none; /* Suppression du style de liste par défaut */
+    padding: 0; /* Pas d'espacement intérieur */
+    margin: 20px 0; /* Marges de 20px en haut et en bas */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 5px; /* Bords arrondis de 5px */
+    max-width: 400px; /* Largeur maximale de 400px */
+    background-color: #f9f9f9; /* Couleur de fond gris très clair */
+}
+
+/* Style des éléments de la liste du panier */
+#panier li {
+    padding: 10px; /* Espacement intérieur de 10px */
+    border-bottom: 1px solid #ddd; /* Bordure inférieure gris clair */
+}
+
+/* Style du dernier élément de la liste */
+#panier li:last-child {
+    border-bottom: none; /* Pas de bordure inférieure */
+    font-weight: bold; /* Texte en gras */
+    background-color: #e9e9e9; /* Couleur de fond gris clair */
+}
+
+/* Style des éléments impairs de la liste */
+#panier li:nth-child(odd) {
+    background-color: #f1f1f1; /* Couleur de fond gris clair */
+}
+
+/* Style du conteneur du panier */
+.panier-container {
+    display: none; /* Masque le conteneur par défaut */
+    position: fixed; /* Positionnement fixe */
+    top: 50%; /* Positionnement au milieu de l'écran */
+    left: 50%; /* Centré horizontalement */
+    width: 300px; /* Largeur de 300px */
+    max-height: 400px; /* Hauteur maximale de 400px */
+    overflow-y: auto; /* Défilement vertical activé si nécessaire */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 5px; /* Bords arrondis de 5px */
+    background-color: #fff; /* Couleur de fond blanche */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+    text-align: center; /* Alignement centré du texte */
+}
+
+/* Style du conteneur du panier visible */
+.panier-container.visible {
+    display: block; /* Affichage du conteneur */
+}
+
+/* --------------- fin panier */
+
+/* --------------- début footer */
+
+/* Style du pied de page */
+footer {
+    background: lightgrey; /* Couleur de fond gris clair */
+    height: 10vh; /* Hauteur de 10% de la hauteur de la fenêtre */
+}
+
+/* Style du texte dans le pied de page */
+footer p {
+    text-align: center; /* Alignement centré du texte */
+    line-height: 10vh; /* Hauteur de ligne pour centrer verticalement le texte */
+}
+
+/* --------------- fin footer */
