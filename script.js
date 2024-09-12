@@ -75,3 +75,22 @@ const produits = {
         { nom: "Salade de fruits, lait de coco", img: "img/thai-ruam-mit-dessert-768x1024.webp", prix: "3.90€" }
     ]
 };
+
+function genererCartesHTML(produits) {
+    return produits.map(produit => `
+        <div class="carte">
+            <div class="img">
+                <img src="${produit.img}" alt="${produit.nom}" width="310" height="310">
+            </div>
+            <div class="titre">${produit.nom}</div>
+            <div class="box">
+                <div class="prix">${produit.prix}</div>
+                <button class="achat">Ajouter au panier</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+codeHTMLEntrees = genererCartesHTML(produits.entrees);
+console.log(codeHTMLEntrees);
+const produitsElement = document.getElementById('produits');
