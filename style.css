@@ -35,7 +35,7 @@
 
 /* Effet de survol sur les liens du menu */
 .navbar .menu li a:hover {
-    color: lightsalmon; /* Changement de la couleur du texte lors du survol */
+    color: lightcoral /* Changement de la couleur du texte lors du survol */
 }
 
 /* Style pour l'élément actif du menu */
@@ -64,6 +64,7 @@
     align-items: flex-start; /* Alignement des éléments sur le côté gauche */
     color: white; /* Couleur de texte blanche */
     height: 100vh; /* Hauteur définie à 100% de la hauteur de la fenêtre */
+    margin-bottom: 40px;
 }
 
 /* Style du titre principal */
@@ -104,15 +105,15 @@
 .produits_texte {
     text-align: center; /* Alignement centré du texte */
     font-size: 30px; /* Taille de la police */
-    font-weight: 300; /* Poids de la police légère */
+    font-weight: 600; /* Poids de la police légère */
     margin-top: 20px; /* Marge supérieure de 20px */
-    margin-left: 80px; /* Marge gauche de 80px */
     color: black; /* Couleur du texte noire */
 }
 
 /* Espacement pour la section des produits */
 .section_produits {
     padding: 40px 5%; /* Espacement intérieur de 40px en haut/bas et 5% à gauche/droite */
+    margin-bottom: 230px;
 }
 
 /* Disposition des produits en grille */
@@ -181,6 +182,18 @@
     cursor: pointer; /* Curseur pointeur survol */
     background: black; /* Couleur de fond noire */
     color: white; /* Couleur de texte blanche */
+}
+.panier_sproduit{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.panier_sproduit a{
+    text-decoration: none;
+    color: black
+}
+.panier_sproduit a:hover{
+    color: lightcoral
 }
 
 /* --------------- fin produit */ 
