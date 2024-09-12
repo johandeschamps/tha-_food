@@ -87,7 +87,13 @@
     color: white; /* Couleur de texte blanche */
     border-radius: 5px; /* Bords arrondis de 5px */
     cursor: pointer; /* Curseur pointeur survol */
+    transition: background 0.5s; /* apparition du background en 0.5sc */
 }
+.content button:hover{
+    background-color: lightcoral;/* Couleur de orange */
+    transform: translateY(-5px);/* translation en Y survol */
+}
+
 
 /* --------------- fin main */ 
 
